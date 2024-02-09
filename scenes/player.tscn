@@ -6,7 +6,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_gsr16"]
 radius = 42.107
 
-[node name="Player" type="Sprite2D"]
+[node name="Player" type="Sprite2D" groups=["player"]]
 texture = ExtResource("1_euv0j")
 script = ExtResource("2_3qewk")
 
@@ -23,3 +23,5 @@ offset_bottom = -59.0
 text = "bernie"
 
 [connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]
