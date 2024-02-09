@@ -1,4 +1,4 @@
-extends Node2D
+extends Control
 
 
 func _on_names_field_text_changed():
