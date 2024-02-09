@@ -1,6 +1,6 @@
 [gd_resource type="Theme" load_steps=2 format=3 uid="uid://bn22c4i68u7ed"]
 
-[ext_resource type="FontFile" uid="uid://dbkeu12juluw0" path="res://FOT-Seurat Pro B.otf" id="1_cd6ex"]
+[ext_resource type="FontFile" uid="uid://dbkeu12juluw0" path="res://assets/FOT-Seurat Pro B.otf" id="1_cd6ex"]
 
 [resource]
 default_font = ExtResource("1_cd6ex")

@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://dfbnj4kq53ksv"]
+
+[ext_resource type="Texture2D" uid="uid://cbeoee4jjfmsx" path="res://assets/bernie.png" id="1_euv0j"]
+[ext_resource type="Script" path="res://scenes/player.gd" id="2_3qewk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gsr16"]
+radius = 42.107
+
+[node name="Player" type="Sprite2D"]
+texture = ExtResource("1_euv0j")
+script = ExtResource("2_3qewk")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_gsr16")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -26.0
+offset_top = -82.0
+offset_right = 24.0
+offset_bottom = -59.0
+text = "bernie"
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

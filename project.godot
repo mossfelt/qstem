@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="qstem game"
-run/main_scene="res://node_3d.tscn"
+run/main_scene="res://scenes/titlescreen.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -23,7 +23,7 @@ ImportantVariables="*res://important_variables.gd"
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
-window/size/mode=3
+window/stretch/mode="canvas_items"
 
 [editor]
 
